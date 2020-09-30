@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="baner">
+        <h1>Biuro podróży</h1>
+    </div>
+    <div class="top1">
+        <h2>Nasza oferta:</h2>
+        <ul>
+            <li>Grecja</li>
+            <li>Bułgaria
+                <ol>
+                    <li>Lilia</li>
+                    <li>Perla</li>
+                    <li>Izola Paradise</li>
+                </ol>
+            </li>
+            <li>Egipt</li>
+        </ul>
+    </div>
+    <div class="top2">
+        <h2>Cennik</h2>
+        <table>
+            <tr>
+                <td>Kraj</td>
+                <td>Cena</td>
+            </tr>
+            <tr>
+                <td>Grecja</td>
+                <td>1500-3000 zł</td>
+            </tr>
+            <tr>
+                <td>Bułgaria</td>
+                <td>999-2000 zł</td>
+            </tr>
+            <tr>
+                <td>Egipt</td>
+                <td rowspan="2">1300-4000 zł</td>
+            </tr>
+            <tr>
+                <td>Hiszpania</td>
+            </tr>
+        </table>
+    </div>
+    <div class="top3">
+        <img src="./images/biuro.jpg" alt="biuro podróży">
+    </div>
+    <div class="main">
+        <h1>SZUKAJ OFERT</h1>
+        
+        <form action="#">
+            <label for="kierunek">Podaj kierunek</label>
+            <input type="text" id="kierunek"> <br>
+            <label for="transport">Rodzaj transportu</label>
+            <select name="transport" id="transport">
+                <option value="samolot">Samolot</option>
+                <option value="samochod">Samochód</option>
+                <option value="pociag">Pociąg</option>
+            </select> <br>
+            <label for="od">Wyjazd od:</label>
+            <input type="date" name="od" id="od"> <br>
+            <label for="do">Powrót do:</label>
+            <input type="date" name="do" id="do"> <br>
+            <label for="dorosli">Dorośli:</label>
+            <input type="number" name="dorosli" id="dorosli">
+            <label for="dzieci">Dzieci:</label>
+            <input type="number" name="dzieci" id="dzieci"> <br>
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+    <div class="footer">
+        <p><i>Wykonał: Jakub Szymczak</i></p>
+        <a href="https://formatowanie.pl" target="_blank">Odwiedź także</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
